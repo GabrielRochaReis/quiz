@@ -54,8 +54,10 @@ public class FilmeConfiguration  implements ApplicationRunner {
 //		ArrayList<Perfis> list = new ArrayList<Perfis>();
 //		list.add(perfis);
 //		Usuario usuario = new Usuario(new Long(1), "gabriel", "1234", list);
-		Usuario usuario = new Usuario(1, "gabriel", "1234");
-		usuarioService.save(usuario);
+		Usuario usuario1 = new Usuario(1, "gabriel", "1234");
+		usuarioService.save(usuario1);
+		Usuario usuario2 = new Usuario(1, "visitante", "4321");
+		usuarioService.save(usuario2);
 	}
 
 	private void carregarQuiz(List<Filme> filmes) {
